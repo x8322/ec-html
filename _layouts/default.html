@@ -1,0 +1,23 @@
+---
+layout: compress
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{{page.title}}</title>
+    {% for css in site.css %}
+    <link href="{{ css | relative_url }}" rel="stylesheet">
+    {% endfor %}
+    {% for js in site.js %}
+    <script src="{{ js | relative_url }}" type="text/javascript"></script>
+    {% endfor %}
+</head>
+<body>
+    {{ content }}
+</body>
+</html>

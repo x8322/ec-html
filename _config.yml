@@ -1,0 +1,28 @@
+title: Demo
+description: test
+
+baseurl: ""
+
+markdown: kramdown
+collections:
+  lessons:
+    output: true
+    permalink: /:path.html
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "lessons"
+    values:
+      layout: "default"
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  startings: [head, body]
+css:
+  - ../assets/css/site.css
+js:
